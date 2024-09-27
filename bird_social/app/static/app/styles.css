@@ -40,3 +40,93 @@ body {
 #home_div:hover{                                                         /* code for the hovering settings of the home div */
     background-color:gray;
 }
+
+#profile_div{
+    position: fixed;                                                     /* div , text and icon for profile button */
+    margin-left: 1.5vw;
+    top: 30vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.25vh;
+    padding-bottom: 0.25vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    border-radius: 6vh;
+
+}
+#profile{
+    color: white;
+    font-size: 1.5vw;
+}
+
+#profile_icon{
+    filter: invert(1);
+    height: 2vw;
+    width: auto;
+    margin-right: 0.5vw;
+}
+
+#profile_div:hover{                                                         /* code for the hovering settings of the profile div */
+    background-color:gray;
+}
+
+#search_div{
+    position: fixed;                                                     /* div , text and icon for search button */
+    margin-left: 1.5vw;
+    top: 45vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.25vh;
+    padding-bottom: 0.25vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    border-radius: 6vh;
+
+}
+#search{
+    color: white;
+    font-size: 1.5vw;
+}
+
+#search_icon{
+    filter: invert(1);
+    height: 2vw;
+    width: auto;
+    margin-right: 0.5vw;
+}
+
+#search_div:hover{                                                         /* code for the hovering settings of the search div */
+    background-color:gray;
+}
+
+#messages_div{
+    position: fixed;                                                     /* div , text and icon for messages button */
+    margin-left: 1.5vw;
+    top: 60vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 0.25vh;
+    padding-bottom: 0.25vh;
+    padding-right: 5vw;
+    padding-left: 5vw;
+    border-radius: 6vh;
+
+}
+#messages{
+    color: white;
+    font-size: 1.5vw;
+}
+
+#messages_icon{
+    filter: invert(1);
+    height: 2vw;
+    width: auto;
+    margin-right: 0.5vw;
+}
+
+#messages_div:hover{                                                         /* code for the hovering settings of the messages div */
+    background-color:gray;
+}
