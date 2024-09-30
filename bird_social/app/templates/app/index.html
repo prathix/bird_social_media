@@ -1,14 +1,6 @@
+{% extends 'app/templates.html' %}
 {%load static%}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'app/styles.css' %}">
-    <title>Birdgram</title>
-</head>
-<body>
+{% block body %}
     <div id = "left_bar"></div>
         <div id="home_div">
             <image id = "home_icon" src="{% static 'app/images/home.png' %}" alt="Home Image"></image>
@@ -27,5 +19,4 @@
             <p id = "messages"> Messages </p>
         </div>
         <p id="posts">Posts</p>
-</body>
-</html>
+{% endblock %}
