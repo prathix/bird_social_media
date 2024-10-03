@@ -1,6 +1,7 @@
 {% extends 'app/templates.html' %}
-{%load static%}
+{% load static %}
 {% block body %}
+    {{ block.super }}
     <div id = "left_bar"></div>
         <div id="home_div">
             <image id = "home_icon" src="{% static 'app/images/home.png' %}" alt="Home Image"></image>
