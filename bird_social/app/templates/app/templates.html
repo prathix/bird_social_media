@@ -9,7 +9,7 @@
     </head>
     <body>
         {% block body_index %}
-            <script src="{% static 'portfoliov3/script.js' %}"></script>
+            <script src="{% static 'app/script.js' %}"></script>
             {% for post in posts %}
                 <div class = "post">
                     <h2 class="post_title">{{post.title}}</h2>
@@ -19,6 +19,9 @@
                 </div>
             {% endfor %}
 
-            {% endblock %}
+        {% endblock %}
+
+        {% block body_auth %}
+        {% endblock %}
     </body>
 </html>

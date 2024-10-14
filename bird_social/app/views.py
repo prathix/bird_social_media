@@ -19,4 +19,4 @@ def signup_view(request):
         form = SignUpForm()
     
     # Render the correct template
-    return render(request, 'auth.html', {'signup_form': form, 'form_type': 'signup'})
+    return render(request, 'app/auth.html', {'signup_form': form, 'form_type': 'signup'})
