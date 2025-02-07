@@ -1,25 +1,23 @@
-{% extends 'app/templates.html' %}
 {% load static %}
-{% block body_auth %}
-{{ block.super }}
-    <div id="login_div">
-        <form>
-            {% csrf_token %}
-            <input type="email" id="mail_login" name="email" placeholder="Email" required>
-            <input type="password" id="password_login" name="password" placeholder="Password" required>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+{% block content %}
 
-    <div id="signup_div">
-        <form>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'app/styles.css' %}">
+        <title>Birdgram</title>
+    </head>
+    <body>
+        <h2>Sign Up</h2>
+        <form class ="registration-form" action="/register" methos = "post">
+
+            {{ form }}
             {% csrf_token %}
-            <input type="text" id="username_signup" name="username" placeholder="Username" required>
-            <input type="email" id="mail_signup" name="email" placeholder="Email" required>
-            <input type="password" id="password_signup" name="password" placeholder="Password" required>
-            <input type="password" id="password_confirmation_signup" name="password_confirmation" placeholder="Confirm Password" required>
-            <input type="file" id="profile_picture_signup" name="profile_picture" accept="image/*">
-            <input type="submit" value="Sign Up">
+            <button>Submit</button>
+
         </form>
-    </div>
+    </body>
+    </html>
+
 {% endblock %}
